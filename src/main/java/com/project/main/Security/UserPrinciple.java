@@ -56,7 +56,7 @@ public class UserPrinciple implements UserDetails{
 	public String getUsername() {
 		return name;
 	}
-
+	//added constructor added comment
 	public UserPrinciple() {
 		super();
 	}

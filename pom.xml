@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.project.main</groupId>
-	<artifactId>collective</artifactId>
+	<artifactId>usercollective</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>collective</name>
+	<name>usercollective</name>
 	<description>Main for all concepts</description>
 	<url />
 	<licenses>
@@ -116,25 +116,14 @@
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
 						</path>
+						<path>
+							<groupId>org.mapstruct</groupId>
+							<artifactId>mapstruct-processor</artifactId>
+							<version>1.4.2.Final</version>
+						</path>
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
-
-			 <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-                <source>1.8</source>
-                <target>1.8</target>
-                <annotationProcessorPaths>
-                    <path>
-                        <groupId>org.mapstruct</groupId>
-                        <artifactId>mapstruct-processor</artifactId>
-                        <version>1.4.2.Final</version>
-                    </path>
-                </annotationProcessorPaths>
-            </configuration>
-  </plugin>
 		</plugins>
 	</build>
 

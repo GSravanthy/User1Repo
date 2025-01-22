@@ -57,4 +57,15 @@ public class UserPrinciple implements UserDetails{
 		return name;
 	}
 
+	public UserPrinciple() {
+		super();
+	}
+
+	public UserPrinciple(Long userId, String name, Collection<? extends GrantedAuthority> authorities) {
+		super();
+		this.userId = userId;
+		this.name = name;
+		this.authorities = authorities;
+	}
+
 }
